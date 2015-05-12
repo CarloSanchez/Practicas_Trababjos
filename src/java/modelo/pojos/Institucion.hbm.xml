@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/05/2015 09:44:33 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="modelo.entidad.Institucion" optimistic-lock="version" schema="EVENTOSS" table="INSTITUCION">
+    <id name="idInstitucion" type="string">
+      <column length="15" name="ID_INSTITUCION"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="institucion" type="string">
+      <column length="200" name="INSTITUCION"/>
+    </property>
+  </class>
+</hibernate-mapping>

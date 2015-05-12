@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11/05/2015 09:44:33 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="modelo.entidad.Evento" optimistic-lock="version" schema="EVENTOSS" table="EVENTO">
+    <id name="idEvento" type="string">
+      <column length="15" name="ID_EVENTO"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombreevento" type="string">
+      <column length="100" name="NOMBREEVENTO"/>
+    </property>
+    <property name="FInicioEvento" type="date">
+      <column length="7" name="F_INICIO_EVENTO"/>
+    </property>
+    <property name="FFinalEvento" type="date">
+      <column length="7" name="F_FINAL_EVENTO"/>
+    </property>
+    <property name="FIniciosuscrip" type="date">
+      <column length="7" name="F_INICIOSUSCRIP"/>
+    </property>
+    <property name="FFinalsuscrip" type="date">
+      <column length="7" name="F_FINALSUSCRIP"/>
+    </property>
+    <property name="horatotalEvento" type="string">
+      <column length="3" name="HORATOTAL_EVENTO"/>
+    </property>
+    <property name="porcenMinimoAsis" type="string">
+      <column length="3" name="PORCEN_MINIMO_ASIS"/>
+    </property>
+  </class>
+</hibernate-mapping>
